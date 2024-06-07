@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.banner {
+  padding: 0px 30px 30px 180px;
+  align-items: align-center;
+  background-image: url(./assets/images/developer.png);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+}
+
+/* src/index.css */
+@font-face {
+  font-family: "Gilroy-Heavy";
+  src: url("/fonts/Gilroy-Heavy.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
