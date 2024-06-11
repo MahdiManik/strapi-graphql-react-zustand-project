@@ -11,7 +11,9 @@ const Home = () => {
             Mahdi <span className="text-orange-600">Hasan</span>
           </h1>
 
-          <p className="py-8 text-5xl font-bold">This is my blog platform</p>
+          <p className="p-5 text-5xl font-bold text-center bg-primary my-8 text-black rounded-xl">
+            This is my blog platform
+          </p>
         </div>
       </div>
       <div className="mb-20">

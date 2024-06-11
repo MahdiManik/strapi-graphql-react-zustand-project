@@ -24,23 +24,34 @@ const MenuCard = ({ food }) => {
             <div className="md:absolute inset-0 bg-gradient-to-b from-transparent to-[#257830] opacity-0 group-hover:opacity-95 transition-opacity duration-300"></div>
           </div>
         </figure>
-        <div className="card-body md:absolute text-start md:w-[350px] md:h-[345px] rounded-xl shadow-xl p-10 bg-white top-0 px-5 md:mt-72 ">
+        <div className="card-body md:absolute text-start md:w-[300px] md:h-[390px] rounded-xl shadow-xl p-10 bg-white top-0 px-5 md:mt-72 ">
           <Link
             to={"/"}
-            className="card-title font-bold hover:text-green-800 justify-center pb-4"
+            className="card-title font-bold hover:text-blue-800 pb-4"
           >
             {name}
           </Link>
-          <p className="pb-4">{recipe}...</p>
-          <div className="flex justify-between items-center gap-4 pb-4">
-            <p className="btn btn-sm w-4 bg-gray-400">{price}</p>
-            <p className="btn btn-sm w-4 bg-gray-400">{category}</p>
+          <p className="pb-2">{recipe}...</p>
+          <div className="flex justify-between items-center gap-4 pb-2">
+            <p className="w-7 h-8 shadow-xl text-center border-2">{price}</p>
+            <p className="w-7 h-8 shadow-xl text-center border-2">{category}</p>
+          </div>
+          <div className="flex justify-between items-center gap-4 pb-2 mt-3 mb-2">
+            <button className="btn  bg-green-700 hover:bg-green-800 text-white">
+              Edit Food
+            </button>
+            <button
+              className="btn  bg-red-500 hover:bg-red-600 
+            text-white"
+            >
+              Delete Food
+            </button>
           </div>
 
           <div className="mb-6">
             <Link
               to={"/"}
-              className="bg-white btn btn-outline text-md font-bold border-2 rounded-md  flex justify-center items-center hover:text-white hover:bg-[#257830] h-14 gap-4 w-[200px]"
+              className="bg-white btn btn-outline text-md font-bold border-2 rounded-md  flex justify-center items-center hover:text-white hover:bg-[#257830] h-12 gap-4 w-[150px]"
             >
               Explore More
             </Link>

@@ -70,9 +70,19 @@ const Navbar = () => {
                 ? "btn bg-orange-400 px-4 rounded-lg btn-sm font-bold "
                 : "px-4 rounded-lg btn-sm font-bold btn btn-ghost hover:bg-orange-400"
             }
-            to={"/contact"}
+            to={"/register"}
           >
-            Talk to me
+            Sign Up
+          </NavLink>
+          <NavLink
+            className={({ isActive }) =>
+              isActive
+                ? "btn bg-orange-400 px-4 rounded-lg btn-sm font-bold "
+                : "px-4 rounded-lg btn-sm font-bold btn btn-ghost hover:bg-orange-400"
+            }
+            to={"/login"}
+          >
+            Login
           </NavLink>
         </div>
       </div>

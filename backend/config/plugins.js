@@ -1,15 +1,17 @@
-module.exports = () => ({});
+// module.exports = () => ({});
 
-// module.exports = {
-//   //
-//   graphql: {
-//     endpoint: "/graphql",
-//     shadowCRUD: true,
-//     playgroundAlways: false,
-//     depthLimit: 7,
-//     amountLimit: 100,
-//     apolloServer: {
-//       tracing: false,
-//     },
-//   },
-// };
+module.exports = {
+  //
+  graphql: {
+    enabled: true,
+    endpoint: "/graphql",
+    shadowCRUD: true,
+    playgroundAlways: false,
+    depthLimit: 7,
+    chartbrew: true,
+    amountLimit: 100,
+    apolloServer: {
+      tracing: false,
+    },
+  },
+};
